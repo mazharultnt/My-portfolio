@@ -1,0 +1,6 @@
+# Ignore CSS file size from language statistics calculation
+*.css linguist-detectable=false
+*.html linguist-detectable=false
+
+# Force GitHub to recognize JavaScript as the primary language
+*.js linguist-detectable=true
