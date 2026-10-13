@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazharul Islam | Front-End Developer</title>
+  <meta name="description" content="Personal portfolio of Mazharul Islam, a junior front-end developer from Gazipur, Bangladesh.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Mazharul<span>.</span></a>
+
+      <button class="menu-button" id="menu-button" aria-label="Open menu" aria-expanded="false">Menu</button>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I am Mazharul Islam</p>
+          <h1>I build clean, responsive websites.</h1>
+          <p class="lead">
+            I am a junior front-end developer from Gazipur, Bangladesh. I am learning every day and
+            I am looking for a remote junior role where I can keep growing.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">See my work</a>
+            <a href="#contact" class="btn btn-outline">Contact me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero-illustration.jpg" alt="Illustration of a developer desk" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="images/about-workspace.jpg" alt="My workspace" onerror="this.style.display='none'">
+        </div>
+        <div>
+          <h2 class="section-title">About me</h2>
+          <p>
+            I started web development in 2026 at Creative IT Institute. So far I have learned HTML, CSS,
+            Bootstrap, Tailwind CSS, JavaScript, TypeScript and React. I have not started backend yet.
+          </p>
+          <p>
+            I like turning a design into a page that looks right on a phone and on a big screen. I am
+            still a beginner, so I keep my code simple and I try to understand every line I write.
+          </p>
+          <ul class="facts">
+            <li><strong>Location:</strong> Gazipur, Bangladesh</li>
+            <li><strong>Studying:</strong> Full Stack Web Development</li>
+            <li><strong>Looking for:</strong> Remote junior front-end role</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-light" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-intro">Tools I use when I build. Click a tab to see each group.</p>
+
+        <div class="tabs" id="skill-tabs"></div>
+        <ul class="skill-list" id="skill-list"></ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-intro">A few things I have built while learning.</p>
+
+        <div class="tabs" id="project-filters"></div>
+        <div class="project-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-light" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Contact</h2>
+          <p>Have a question or a job in mind? Send me a message and I will reply as soon as I can.</p>
+          <p><strong>Email:</strong> <a href="mailto:jihadseopro@gmail.com">jihadseopro@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/mazharultnt" target="_blank" rel="noopener">github.com/mazharultnt</a></p>
+        </div>
+
+        <form id="contact-form" novalidate>
+          <div class="form-message" id="form-success" hidden>Thank you! This is a demo form, so the message was not sent anywhere.</div>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" autocomplete="name">
+            <p class="field-error" id="name-error"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" autocomplete="email">
+            <p class="field-error" id="email-error"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5"></textarea>
+            <p class="field-error" id="message-error"></p>
+          </div>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Mazharul Islam. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
